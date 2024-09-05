@@ -7,8 +7,24 @@
 }
 body
 {
-    color: #ededed;
+    
+    background-image: src="images/p1.0.jpg" alt="Cephas the img";
 }
+.home-text
+{
+    color: #000; 
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.863); /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Optional: Padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow for some depth */
+    max-width: 1000px; /* Optional: Width of the card */
+    margin: 20px auto;
+    max-height: auto; /* Optional: Center the card on the page */
+  }
+  
 .header
 {
     position: fixed;
@@ -21,7 +37,10 @@ body
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #201c1ca1;
+  
 }
+
 .logo
 {
     position: relative;
@@ -46,14 +65,25 @@ body
 {
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    background: rgb(7, 37, 39);
-    background-size: cover;
-    background-position: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 70px 10% 0;
+    background-image: url("images/p1.0.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.55); /* White layer with 55% transparency */
+    pointer-events: none; /* Ensures the layer doesn't interfere with interactions */
 }
 .home-content {
     max-width: 1000px;
