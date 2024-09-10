@@ -140,3 +140,45 @@ body
     text-decoration: none;
     font-weight: 600;
 }
+/* Progress bars */
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 8px;
+}
+
+/* Scroll animations */
+.scroll-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.scroll-animate.scrolled {
+    opacity: 1;
+}
+
+/* Typewriter effect */
+h1 {
+    white-space: nowrap;
+    border-right: 3px solid;
+    font-family: monospace;
+    overflow: hidden;
+    animation: blinkCursor 1s infinite step-end;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
