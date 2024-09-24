@@ -85,3 +85,10 @@ window.addEventListener("scroll", () => {
 
 
 // console.log("is script working");
+const aboutSection = document.getElementById('about');
+aboutSection.scrollIntoView({behavior: 'smooth'});
+
+document.getElementById('moreAboutMeBtn').addEventListener('click', function() {
+  console.log('More About Me button clicked!');
+});
+

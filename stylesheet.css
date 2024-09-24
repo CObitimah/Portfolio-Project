@@ -75,7 +75,9 @@ body
     background-position: center;
     
 }
-
+.btn-box {
+    scroll-behavior: smooth;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -140,6 +142,32 @@ body
     text-decoration: none;
     font-weight: 600;
 }
+
+/* Base styles */
+.box {
+    width: 100%;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Ensure it stays full width */
+        padding: 10px; /* Decrease padding */
+        background-color: lightcoral; /* Change background color */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* Keep full width */
+        padding: 5px; /* Further decrease padding */
+        background-color: lightgreen; /* Change background color */
+        font-size: 14px; /* Adjust font size */
+    }
+}
 /* Progress bars */
 .progress-bar {
     width: 100%;
@@ -163,6 +191,7 @@ body
 .scroll-animate.scrolled {
     opacity: 1;
 }
+
 
 /* Typewriter effect */
 h1 {
